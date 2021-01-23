@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab1.Controller">
+   <children>
+      <VBox prefHeight="200.0">
+         <children>
+            <HBox prefHeight="100.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="VT" />
+                        <TextField fx:id="vtField" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0">
+                     <children>
+                        <Label text="VN" />
+                        <TextField fx:id="vnField" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0">
+                     <children>
+                        <Label text="P" />
+                        <HBox>
+                           <children>
+                              <Label text="1:" />
+                              <TextField fx:id="p1f"/>
+                              <Label text="-&gt;" />
+                              <TextField fx:id="p1t" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="31.0">
+                           <children>
+                              <Label text="2:" />
+                              <TextField fx:id="p2f" />
+                              <Label text="-&gt;" />
+                              <TextField fx:id="p2t" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="62.0">
+                           <children>
+                              <Label text="3:" />
+                              <TextField fx:id="p3f"/>
+                              <Label text="-&gt;" />
+                              <TextField fx:id="p3t" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="93.0">
+                           <children>
+                              <Label text="4:" />
+                              <TextField fx:id="p4f" />
+                              <Label text="-&gt;" />
+                              <TextField fx:id="p4t" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="124.0">
+                           <children>
+                              <Label text="5:" />
+                              <TextField fx:id="p5f"/>
+                              <Label text="-&gt;" />
+                              <TextField fx:id="p5t" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="197.0" layoutY="10.0" prefHeight="200.0">
+                     <children>
+                        <Label text="S" />
+                        <TextField fx:id="sField" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Введите цепочку символов:">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+                  <TextField fx:id="chainField">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></TextField>
+                  <Label layoutX="10.0" layoutY="10.0" text="Результат:" />
+                  <TextField fx:id="resField" layoutX="45.0" layoutY="10.0" />
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#click" text="Запустить" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
